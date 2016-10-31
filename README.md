@@ -1,2 +1,2 @@
-# DevelopingDataProduct
-assignment for developing data product
+# The Data Incubator Proposal
+Project Proposal.
