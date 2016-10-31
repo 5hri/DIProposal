@@ -2,6 +2,7 @@ library(ggplot2)
 library(reshape2)
 library(RCurl)
 library(wikipediatrend)
+library(corrplot)
 
 mydata <- read.csv('./data/SFlistings.csv')
 mycal <- read.csv('./data/SFcalendar.csv')
