@@ -12,7 +12,7 @@ tmp<-mydata%>%
   select(price,accommodates,bathrooms,bedrooms,beds,guests_included,review_scores_rating, reviews_per_month)%>%
   mutate(price = as.numeric(gsub('\\$','',price)))
 
-corrplot(cor(tmp, use = "na.or.complete"), type ="upper", method="shade",shade.col=NA, tl.col="black", tl.srt=45)
+corrplot(abs(cor(tmp, use = "na.or.complete")), type ="upper", method="shade",shade.col=NA, tl.col="black", tl.srt=45)
 
 Giants2015 = wp_trend("2015_San_Francisco_Giants_season", from = "2015-01-01", to = "2016-10-01")
 Giants2016 = wp_trend("2016_San_Francisco_Giants_season", from = "2015-01-01", to = "2016-10-01")
